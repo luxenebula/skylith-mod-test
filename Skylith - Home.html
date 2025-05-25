@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///E:/Skylith/Main%20Content%20-%20Source/PC/Skylith%20-%20Home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Skylith - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #e3e3e3;
+        }
+        .topbar {
+            background: #0074BD;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+            font-weight: bold;
+            font-size: 16px;
+            justify-content: space-between;
+        }
+        .topbar .left-section {
+            display: flex;
+            align-items: center;
+        }
+        .topbar .points {
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        .topbar input {
+            padding: 4px 8px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .sidebar {
+            position: fixed;
+            width: 180px;
+            top: 42px;
+            bottom: 0;
+            left: 0;
+            background-color: #f2f2f2;
+            border-right: 1px solid #ccc;
+            padding-top: 10px;
+        }
+        .sidebar button {
+            background-color: #00a2ff;
+            color: white;
+            border: none;
+            margin: 20px 10px;
+            padding: 10px;
+            border-radius: 0px;
+            width: 140px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .sidebar button:hover {
+            background-color: #0074BD;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        .sidebar li:hover {
+            color: #ff6600;
+        }
+        .sidebar li:hover:nth-child(3n) {
+            color: #00cc66;
+        }
+        .sidebar li:hover:nth-child(2n) {
+            color: #3399ff;
+        }
+        .main-content {
+            margin-left: 180px;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .voice-box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .recommended {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .game-tile {
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            font-size: 14px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .game-tile:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .game-tile .info {
+            margin-top: 5px;
+        }
+        .game-tile .info span {
+            display: block;
+            color: gray;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="left-section">Skylith</div>
+        <div class="right-section">
+            <span class="points">💵 1,292</span>
+            
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li>moonbyte</li>
+            <li>🏠 Home・</li><li>👤 Profile</li>
+            <li>✉️ Messages</li>
+            <li>👥 Friends</li>
+            <li>👘 Outfits</li>
+            <li>💼 Inventory</li>
+            <li>🔁 Trade</li>
+            
+            
+        </ul>
+        <button>Upgrade Now</button>
+    </div>
+    <div class="main-content">
+        <div class="voice-box">
+            <h3>🎙️ Unlock Voice Chat</h3>
+            <p>Add automod to a voice channel to enable Voice Chat.</p>
+        </div>
+        <h2>Recommended For You</h2>
+        <div class="recommended">
+            <div class="game-tile">
+                <div class="info">🏀 Jujutsu: Basketball 🏀<span>Official</span><span>91% Rating</span></div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+</body></html>
